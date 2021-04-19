@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screens.HelloFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <ImageView
+            android:id="@+id/hello_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@+id/reference"/>
+
+        <TextView
+            android:id="@+id/reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/GAN"/>
+
+        <LinearLayout
+            android:id="@+id/instruction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_medium"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/hello_imageview"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:drawableLeft="@drawable/ic_checkmark"
+                android:textColor="@android:color/white"
+                android:text="@string/ovalOverlay_instruction"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:drawableLeft="@drawable/ic_checkmark"
+                android:textColor="@android:color/white"
+                android:text="@string/eyes_instruction"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:drawableLeft="@drawable/ic_checkmark"
+                android:textColor="@android:color/white"
+                android:text="@string/smile_instruction"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/take_selfie_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selfie_action"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

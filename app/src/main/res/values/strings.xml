@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SelfieApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="selfie_action">Take a Selfie</string>
+    <string name="GAN">Imagined by a GAN (generative adversarial network)  StyleGAN2 (Dec 2019) - Karras et al. and Nvidia  Don\'t panic. Learn how it works.</string>
+</resources>

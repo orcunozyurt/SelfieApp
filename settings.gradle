@@ -1,0 +1,3 @@
+include ':SelfieLib'
+include ':app'
+rootProject.name = "SelfieApp"
