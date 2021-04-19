@@ -12,6 +12,10 @@
         tools:layout="@layout/fragment_hello" >
         <action
             android:id="@+id/action_helloFragment_to_cameraFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/fade_out"
             app:destination="@id/cameraFragment" />
     </fragment>
     <fragment
@@ -30,6 +34,10 @@
         tools:layout="@layout/fragment_camera" >
         <action
             android:id="@+id/action_cameraFragment_to_previewFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/fade_out"
             app:destination="@id/previewFragment" />
     </fragment>
 
